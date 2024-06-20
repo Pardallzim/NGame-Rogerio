@@ -1,0 +1,62 @@
+[
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields":{
+            "username": "Raphael",
+            "password": "pbkdf2_sha256$720000$TEJEZfBEeT11u2njnjAOwF$6xBVKzSZxCuOJflp6B2MTkbsd2rl/ROgioWNAgQNYR8=",
+            "email": "rapha@gmail.com"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields":{
+            "username": "Rogerio",
+            "password": "pbkdf2_sha256$720000$TEJEZfBEeT11u2njnjAOwF$6xBVKzSZxCuOJflp6B2MTkbsd2rl/ROgioWNAgQNYR8=",
+            "email": "rogerio@gmail.com"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 3,
+        "fields":{
+            "username": "Hadson",
+            "password": "pbkdf2_sha256$720000$TEJEZfBEeT11u2njnjAOwF$6xBVKzSZxCuOJflp6B2MTkbsd2rl/ROgioWNAgQNYR8=",
+            "email": "hadson@gmail.com"
+        }
+    },
+    {
+        "model": "catalog.game",
+        "pk": 1,
+        "fields":{
+            "title": "teste1",
+            "path": "img/2024/06/19/darksouls_llNIbvh.jfif",
+            "description":"teste imagem",
+            "price": 100,
+            "quantity": 12
+        }
+    },
+    {
+        "model": "catalog.game",
+        "pk": 2,
+        "fields":{
+            "title": "teste1",
+            "path": "img/2024/06/19/darksouls_llNIbvh.jfif",
+            "description":"teste imagem",
+            "price": 100,
+            "quantity": 12
+        }
+    },
+    {
+        "model": "catalog.game",
+        "pk": 3,
+        "fields":{
+            "title": "teste1",
+            "path": "img/2024/06/19/darksouls_llNIbvh.jfif",
+            "description":"teste imagem",
+            "price": 100,
+            "quantity": 12
+        }
+    }
+]

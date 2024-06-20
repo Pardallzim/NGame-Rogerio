@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include "partials/_header.html" %}
+<div class="row g-0 justify-content-center">
+    {% if games %}
+        {% for game in games %}
+            <div class="col-4">        
+                <div class="card" style="width: 18rem; margin: auto; margin-top: 20px; margin-bottom: 20px;">
+                    <img src="{{ game.path.url }}" class="card-img-top" alt="{{ game.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ game.title }}</h5>
+                        <p class="card-text">{{ game.description }}</p>
+                        <a href="{% url 'edit_game' game.id %}" class="btn btn-warning">Editar</a>
+                        <form method="post" action="{% url 'delete_game' game.id %}" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger">Deletar</button>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+<div class="text-center">
+    <a href="{% url 'add_game' %}" class="btn btn-success">Adicionar Game</a>
+</div>
+{% endblock %}
